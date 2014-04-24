@@ -5,3 +5,7 @@ Once you've gone through the process of creating a new app within rails, use thi
 Basic Tips
 * indentation
 * html conversion
+
+
+HTML Conversion
+<div> => .div
