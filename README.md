@@ -13,4 +13,10 @@ Basic Tips
 * html conversion
 * deprecated
 
+# Make Sure HAML Is Installed
 
+If you are working with rails, head over to http://rubygems.org/gems/haml. You will want to include the haml gem in your Gemfile and then run bundle install again.
+
+Once HAML is installed you will signify that you want to use HAML files by changeing your view files to have a .haml extension. For instance index.html.haml
+
+Now you can start writing haml code within that file. Haml will then take what you write and convert it to HTML.
