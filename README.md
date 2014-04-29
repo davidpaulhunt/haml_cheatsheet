@@ -2,15 +2,31 @@
 
 Once you've gone through the process of creating a new app within rails, use this cheatsheet to learn the [haml language](http://haml.info/about.html), then find and create within your views.
 
+Haml is meant to encourage easy indentation, understandable markup and structure, and of course, be as DRY as possible.
+
 # Easy Conversion
 
-http://html2haml.heroku.com/
-
-If you've already gone through scaffolding, for instance using the bootstrap-sass gem, you can save your erb files as html.haml, then copy the html to this awesome conversion site and transfer the haml back to your views.
+A quick, no hassle converter like [html2haml](http://html2haml.heroku.com/) can make your life much easier. If you've already gone through scaffolding, for instance using the bootstrap-sass gem, you can save your erb files as html.haml, then copy the html to this awesome conversion site and transfer the haml back to your views.
 
 Basic Tips
-* indentation
-* html conversion
+* Haml is designed in such a way, that there are no 'end's. Instead, haml uses white space to end a block of code. This makes indentation absolutely crucial. It also means that spaces and /t's are NOT interchangeable.
+* In haml, html elements begin with the % sign. For example:
+```
+%div
+  %container
+    %ul
+      %li
+```
+would compile to:
+```
+<div>
+	<container>
+		<ul>
+			<li></li>
+		</ul>
+	</container>
+</div>
+```
 * deprecated
 
 # Make Sure HAML Is Installed
